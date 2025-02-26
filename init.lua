@@ -91,7 +91,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -155,6 +155,25 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- [[ tab settings ]]
+-- length of a \t character
+vim.opt.tabstop = 2
+
+-- length to use when editing text (i.e. tab and bs keys)
+-- (0 for 'tabstop', -1 for 'shiftwidth')
+vim.opt.softtabstop = -1
+
+-- length to use when shifting text (i.e. <<, >>, ==)
+-- (0 for 'tabstop')
+vim.opt.shiftwidth = 0
+
+-- round indentation to multiples of 'shiftwidth' when shifting text
+-- (so it behaves like ctrl-d / ctrl-t)
+vim.opt.shiftround = true
+
+-- if set, only insert spaces; otherwise insert \t and complete with spaces
+vim.opt.expandtab = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
